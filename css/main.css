@@ -60,6 +60,7 @@ table {
   position:fixed;
   top:0;
   width: 100%;
+  z-index: 400;
 }
 
 .nav-flex {
@@ -78,7 +79,10 @@ table {
   font-size: 1.6rem;
   color: #FF895D;
   font-family: 'Flamenco', cursive;
+  transition: all 0.5s ease-in-out;
 }
+
+
 
 .menu a {
 
@@ -105,23 +109,28 @@ table {
 
 .btn-light {
   display: inline-block;
-  background-color: #45EBA5;
+  background-color: #1c9963;
   /* padding: 5px; */
   border-radius: 5px;
   color: white;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin: 5px 0;
 }
 
 /*fin del menu de navegacion */
 
 /* banner ----------------------------------------------*/
-.header{
-  background-image: url("../images/bg-1.png");
+
+
+.parallax {
+  background: #fff fixed no-repeat 50% 50%;
   background-size: cover;
-  height: 100vh;
 }
 
+.header{
+  background-image: url("../images/bg-1.png");
+  height: 100vh;
+}
 
 .header_bottom {
   height: 100vh;
@@ -131,17 +140,74 @@ table {
   text-align: center;
 }
 
-.header_bottom h1 {
-  font-weight: bold;
-  color: #fff;
-  font-size: 2rem;
-  margin: 2rem;
+.container-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+z-index: 100;
 }
+
+.container-text h1, h2 {
+  text-transform: uppercase;
+  /* display: block; */
+  color: white;
+}
+
+.text-1{
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text-2{
+  font-size: 30px;
+  animation: text2 3s 1;
+}
+
+@keyframes text {
+  0%{
+
+    margin-bottom:-40px;
+  }
+  30%{
+    letter-spacing:  25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@keyframes text2 {
+  0%{
+    color: rgba(0, 0, 0, 0.01);
+    margin-bottom:-40px;
+  }
+  30%{
+    color:rgba(0, 0, 0, 0.01)k;
+    letter-spacing:  25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    color: rgba(0, 0, 0, 0.01);
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
 
 .display-column {
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
+  position: relative;
+  top: 9.5rem;
 }
 
 .display-column a{
@@ -153,12 +219,14 @@ table {
 
 }
 
+
+
 .btn-light-2 {
-  background: #45EBA5;
+  background: #1c9963;
   width: 300px;
   margin: auto;
   padding: 1rem 1rem;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 5px;
 }
 
@@ -185,11 +253,20 @@ table {
   letter-spacing: -0.015em;
   padding: 50px 0;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.title:hover
+
+.about {
+  height: auto;
 }
 
 .about p {
   color: #606470;
   line-height: 1.5;
+  margin-bottom: 40px;
   margin-bottom: 40px;
 }
 
@@ -233,6 +310,7 @@ table {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 1rem 0;
+  color: black;
 }
 
 .card p {
@@ -274,18 +352,7 @@ table {
 
 /* fin productos --------------------------*/
 
-/* message ---------------------*/
-  .message {
-    padding: 60px 0;
-    text-align: center;
-  }
 
-  .message h3 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-style: italic;
-  }
-/* fin mesagge ---------------------*/
 
 /* stories -----------------------*/
   .stories {
@@ -300,19 +367,148 @@ table {
   .stories h2 {
     font-weight: 600;
     font-size: 1.5rem;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    color: black;
   }
 
   .stories p {
     line-height: 1.5;
+    margin: 30px;
+
   }
 
   .stories-text-left {
-    background: tomato;
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .stories-text-left p {
+    margin-left: 10px;
+  }
+
+  .stories-text-right {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: 20px;
 
   }
 
 /* fin stories ---------------------*/
+
+/* footer -----------------------*/
+.footer {
+	background-color: #282D4F;
+	color: white;
+	font-size: 0.7em;
+	height: auto;
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer a{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 40px;
+	text-decoration: none;
+  letter-spacing: 1rem;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.footer a:hover {
+	color: white;
+}
+
+.footer img {
+	height: 40px;
+	width: 40px;
+
+}
+
+.footer p {
+  padding: 1rem;
+}
+
+.top a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #FF895D;
+  font-family: 'Flamenco', cursive;
+  transition: all 0.5s ease-in-out;
+  padding: 1rem;
+}
+
+/* fin footer ---------------------*/
+
+/* form_art -------------------*/
+  .logo_form h1 a{
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FF895D;
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+    display: block;
+    padding: 2rem;
+  }
+
+
+
+  /* form ----------------------*/
+  .block-form {
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .form input {
+    display: block;
+    width: 350px;
+    padding: 16px 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  .form_title {
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .btns_login {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  
+
+
+
+
+
+  /* fin form -------------------*/
+/* fin form_art ------------------*/
