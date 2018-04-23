@@ -26,8 +26,8 @@
         <img src="images/login_google.png" alt="">
       </a>
     </div>
-    <form class="form" action="index.html" method="post" onsubmit="return validar();">
-      <input type="text" name="text" placeholder="Nombre Completo" value="" id="name">
+    <form class="form" action="index.html" method="post" onsubmit="return validar()">
+      <input type="text" name="text" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" id="name">
       <input type="email" name="email" placeholder="Email" value="" id="email">
       <input type="password" name="password" placeholder="Contraseña" value="" id="contraseña">
       <input type="password" name="confirm" placeholder="Confirmar Contraseña" value="" id="confirmar">

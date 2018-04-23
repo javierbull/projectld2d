@@ -77,11 +77,26 @@ table {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.6rem;
-  color: #FF895D;
   font-family: 'Flamenco', cursive;
   transition: all 0.5s ease-in-out;
+  animation:  type 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  width: 13ch;
+  animation-delay: 3s;
+  color: white;
 }
 
+@keyframes type {
+  0%{
+
+    width: 0ch;
+  }
+  100%{
+    color: #FF895D;
+    width: 13ch;
+  }
+}
 
 
 .menu a {
@@ -240,34 +255,93 @@ z-index: 100;
 /* fin banner -----------------------------------*/
 
 /*-bloque about------------------------------------*/
-.about {
+.about, .productos{
   text-align: center;
+  padding: 70px 0;
   margin-bottom: 40px;
-  padding-bottom: 60px;
+  height: auto;
+  position: relative;
+}
+
+.contenedor_h1 {
+
+  height: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+}
+
+.list-tittle {
+  animation: rotacion 6s infinite;
+}
+
+.tomato-text{
+  color: tomato;
+}
+
+.green-text{
+  color: green;
+}
+
+.purple-text{
+  color:#292725;
+}
+
+
+
+
+@keyframes rotacion {
+  0%{
+    margin-top: 0;
+  }
+  20%{
+    margin-top: 0;
+  }
+  25%{
+    margin-top: -40px;
+  }
+  50%{
+    margin-top: -40px;
+  }
+  55%{
+    margin-top: -80px;
+  }
+  80%{
+    margin-top: -80px;
+  }
+  85%{
+    margin-top: -40px;
+  }
+  95%{
+    margin-top: -40px;
+  }
+  100%{
+    margin-top: 0px;
+  }
 }
 
 .title{
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 40px;
+  line-height: 40px;
   letter-spacing: -0.015em;
-  padding: 50px 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
 
 }
 
-.title:hover
-
-.about {
-  height: auto;
-}
 
 .about p {
   color: #606470;
   line-height: 1.5;
-  margin-bottom: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .btn {
@@ -288,10 +362,15 @@ z-index: 100;
 }
 /*fin bloque about---------------------------------*/
 /*productos-------------------------------*/
-.productos{
-  margin-bottom:60px;
-  margin-top: 20px;
-}
+
+
+/* .productos {
+  text-align: center;
+  padding: 70px 0;
+  margin-bottom: 40px;
+  height: auto;
+  position: relative;
+} */
 
 .bg-blue{
   background: #007bff;
@@ -321,6 +400,19 @@ z-index: 100;
 .card img{
   width: 300px;
   border-radius: 5px 5px 0 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-border-hidden {
+  overflow: hidden;
+  width: 300px;
+  height: 180px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.15);
+    transform: scale(1.15);
 
 }
 
@@ -344,6 +436,7 @@ z-index: 100;
 }
 
 .cards-block {
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -357,12 +450,134 @@ z-index: 100;
 /* stories -----------------------*/
   .stories {
     display: flex;
-
+    justify-content: space-between;
+    width: 100%;
   }
 
   .stories img {
-    width: 50vw;
+    width: 640px;
+    transition: all 0.5s ease-in-out;
   }
+
+  .content-img{
+    width: 640px;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+
+  .content-img:hover .content-1{
+    width: 200%;
+  }
+
+  .content-img:hover .content-2{
+    width: 200%;
+  }
+  .content-img:hover .content-3{
+    width: 200%;
+  }
+  .content-img:hover .content-4{
+    width: 200%;
+  }
+
+  .content-img:hover img{
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+  }
+
+  .content-txt {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 10px;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .titulo-3 {
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-txt p {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content-img:hover h3{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+  }
+
+  .content-img:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  .content-1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: rgba(0, 100, 255, 0.7);
+    top: 0;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left:-750px;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .content-2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: rgba(0, 100, 255, 0.5);
+    top: 0;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left:-800px;
+    transition: all 0.9s ease-in-out;
+  }
+
+  .content-3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: rgba(0, 100, 255, 0.5);
+    top: 0;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(30deg);
+    margin-left:-800px;
+    margin-top: -500px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 1px 20px -5px black;
+  }
+
+.content-4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: rgba(0, 100, 255, 0.5);
+    top: 0;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(30deg);
+    margin-left:-850px;
+    margin-top: -500px;
+    transition: all 0.8s ease-in-out;
+  }
+
 
   .stories h2 {
     font-weight: 600;
@@ -504,7 +719,7 @@ z-index: 100;
     margin-right: 75px;
   }
 
-  
+
 
 
 
