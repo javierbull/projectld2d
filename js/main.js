@@ -68,3 +68,28 @@ function soloLetras(e){
       return false;
     }
 }
+
+//animaciones con ScrollMagic
+
+//menu de navegacion
+
+// init controller
+
+var controller = new ScrollMagic.Controller();
+
+// build scenes
+new ScrollMagic.Scene({triggerElement: "#header", duration: 600})
+        .setClassToggle("#high1", "active") // add class toggle
+        // .addIndicators()
+        .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#about", duration: 400})
+        .setClassToggle("#high2", "active") // add class toggle
+        // .addIndicators() 
+        .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#productos", duration: 1000})
+        .setClassToggle("#high3", "active") // add class toggle
+        // .addIndicators() 
+        .addTo(controller);
+
+
+//fin menu de navegacion

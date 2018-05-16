@@ -721,10 +721,11 @@ z-index: 100;
   }
 
 
-
-
-
-
-
-  /* fin form -------------------*/
 /* fin form_art ------------------*/
+
+/* scrollMagic */
+.active {
+  background: #ECF0F1;
+}
+
+/* fin scrollMagic */
