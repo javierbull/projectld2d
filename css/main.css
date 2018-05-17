@@ -745,8 +745,7 @@ z-index: 100;
   }
 
   .btns_login {
-    display: flex;
-    justify-content: space-between;
+    
     margin-left: 75px;
     margin-right: 75px;
   }
