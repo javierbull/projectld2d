@@ -689,10 +689,11 @@ z-index: 100;
   .block-form {
     background: #fff;
     width: 500px;
-    height: 500px;
+    height: 550px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 0px 0.5px gray;
   }
 
   .form input {
@@ -704,6 +705,36 @@ z-index: 100;
     margin-right: auto;
     margin-bottom: 15px;
     box-sizing: border-box;
+  }
+
+  #loginfacebook{
+      color: #fff;
+      width: 350px;
+      padding: 16px 10px;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      background-color: blue;
+      text-align: center;
+      font-size: 1rem;
+      box-shadow: 0px 1px 0px 0.5px gray;
+  }
+  #logoutfacebook{
+    color: #fff;
+    width: 350px;
+    padding: 16px 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    background-color: blue;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0px 1px 0px 0.5px gray;
+    display: none;
   }
 
   .form_title {
@@ -719,6 +750,8 @@ z-index: 100;
     margin-left: 75px;
     margin-right: 75px;
   }
+
+
 
 
 /* fin form_art ------------------*/

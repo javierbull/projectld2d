@@ -19,12 +19,16 @@
   <div class="block-form">
     <h2 class="form_title">Crear cuenta</h2>
     <div class="btns_login">
-      <a href="#">
+      <!-- <a href="#" >
         <img src="images/login_facebook.png" alt="">
       </a>
       <a href="#">
         <img src="images/login_google.png" alt="">
-      </a>
+      </a> -->
+
+      <a id="loginfacebook">Ingresar con facebook</a>
+      <div id="user"></div>
+      <a id="logoutfacebook">Cerrar sesión</a>
     </div>
     <form class="form" action="index.html" method="post" onsubmit="return validar()">
       <input type="text" name="text" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" id="name">
@@ -35,9 +39,25 @@
     </form>
   </div>
 
+  <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/fb.js"></script>
 
-<script src="js/main.js">
+  <script>
 
-</script>
+      $(document).ready(function(){
+          $('#loginfacebook').click(function(){
+
+              loginUsingFacebook();
+
+          });
+          $('#logoutfacebook').click(function(){
+
+              logoutFacebook();
+
+          });
+      })
+
+  </script>
 </body>
 </html>
