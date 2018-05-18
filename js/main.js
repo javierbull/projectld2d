@@ -84,12 +84,23 @@ new ScrollMagic.Scene({triggerElement: "#header", duration: 600})
         .addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#about", duration: 400})
         .setClassToggle("#high2", "active") // add class toggle
-        // .addIndicators() 
+        // .addIndicators()
         .addTo(controller);
 new ScrollMagic.Scene({triggerElement: "#productos", duration: 1000})
         .setClassToggle("#high3", "active") // add class toggle
-        // .addIndicators() 
+        // .addIndicators()
         .addTo(controller);
 
 
 //fin menu de navegacion
+
+// bloque abut
+var Scene1Left = new ScrollMagic.Scene({
+	triggerElement: '#text-block'
+})
+.setClassToggle('#text-block', 'translateLeftActive')
+.addTo(controller);
+
+// fin bloque about
+
+// fin animaciones scrollMagic
