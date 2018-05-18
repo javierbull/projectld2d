@@ -257,7 +257,7 @@ z-index: 100;
 /*-bloque about------------------------------------*/
 .about, .productos{
   text-align: center;
-  padding: 70px 0;
+  padding: 100px 0;
   margin-bottom: 40px;
   height: auto;
   position: relative;
@@ -275,11 +275,12 @@ z-index: 100;
   right: 0;
   bottom: 0;
   overflow: hidden;
-
+  margin-top: 50px;
 }
 
 .list-tittle {
-  animation: rotacion 6s infinite;
+
+  animation: rotacion 12s infinite;
 }
 
 .tomato-text{
@@ -292,6 +293,10 @@ z-index: 100;
 
 .purple-text{
   color:#292725;
+}
+
+.parrafo{
+  margin-top: 95px;
 }
 
 
@@ -364,14 +369,6 @@ z-index: 100;
 /*productos-------------------------------*/
 
 
-/* .productos {
-  text-align: center;
-  padding: 70px 0;
-  margin-bottom: 40px;
-  height: auto;
-  position: relative;
-} */
-
 .bg-blue{
   background: #007bff;
 }
@@ -436,7 +433,7 @@ z-index: 100;
 }
 
 .cards-block {
-  padding-top: 40px;
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -774,6 +771,8 @@ z-index: 100;
 /* scrollMagic */
 .active {
   background: #ECF0F1;
+  font-weight: 800;
+  color: tomato;
 }
 
 /* fin scrollMagic */
