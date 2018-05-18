@@ -19,16 +19,9 @@
   <div class="block-form">
     <h2 class="form_title">Crear cuenta</h2>
     <div class="btns_login">
-      <!-- <a href="#" >
-        <img src="images/login_facebook.png" alt="">
-      </a>
-      <a href="#">
-        <img src="images/login_google.png" alt="">
-      </a> -->
-
-      <a id="loginfacebook">Ingresar con facebook</a>
+      <a class="facebook-button" id="loginfacebook">Ingresar con facebook</a>
       <div id="user"></div>
-      <a id="logoutfacebook">Cerrar sesión</a>
+      <a class="facebook-button" id="logoutfacebook">Cerrar sesión</a>
     </div>
     <form class="form" action="index.html" method="post" onsubmit="return validar()">
       <input type="text" name="text" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" id="name">

@@ -720,7 +720,13 @@ z-index: 100;
       text-align: center;
       font-size: 1rem;
       box-shadow: 0px 1px 0px 0.5px gray;
+      transition: all 0.3s ease-in-out;
   }
+
+  #loginfacebook:hover {
+    background-color: #0060CA;
+  }
+
   #logoutfacebook{
     color: #fff;
     width: 350px;
@@ -734,8 +740,14 @@ z-index: 100;
     text-align: center;
     font-size: 1rem;
     box-shadow: 0px 1px 0px 0.5px gray;
+    transition: all 0.3s ease-in-out;
     display: none;
   }
+
+  #logoutfacebook:hover {
+    background-color: #0060CA;
+  }
+
 
   .form_title {
     color: black;
@@ -745,11 +757,14 @@ z-index: 100;
   }
 
   .btns_login {
+
     display: flex;
     justify-content: space-between;
     margin-left: 75px;
     margin-right: 75px;
   }
+
+
 
 
 
