@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/fontawesome-all.css">
   <link href="https://fonts.googleapis.com/css?family=Asap|Flamenco" rel="stylesheet">
-  <title>Quiero Vender</title>
+  <title>Iniciar Sesión</title>
 
 </head>
 <body class="bg-gray container">
@@ -16,19 +16,20 @@
     </h1>
   </div>
 
-  <div class="block-form">
-    <h2 class="form_title">Crear cuenta de vendedor</h2>
+  <div class="block-form_ingresar">
+    <h2 class="form_title">Ingresar</h2>
     <div class="btns_login">
       <a class="facebook-button" id="loginfacebook">Ingresar con facebook</a>
       <div id="user"></div>
       <a class="facebook-button" id="logoutfacebook">Cerrar sesión</a>
     </div>
     <form class="form" action="index.html" method="post" onsubmit="return validar()">
-      <input type="text" name="text" placeholder="Nombre Completo" onkeypress="return soloLetras(event)" id="name">
+
       <input type="email" name="email" placeholder="Email" value="" id="email">
       <input type="password" name="password" placeholder="Contraseña" value="" id="contraseña">
-      <input type="password" name="confirm" placeholder="Confirmar Contraseña" value="" id="confirmar">
-      <input type="submit" name="" class="btn-light" value="CREAR TU CUENTA"  id="submit">
+      
+      <a href="#" class="contraseña_olvidada">¿Olvidaste tu contraseña?</a>
+      <input type="submit" name="" class="btn-light" value="INGRESAR"  id="submit">
     </form>
   </div>
 
