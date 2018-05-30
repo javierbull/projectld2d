@@ -521,11 +521,12 @@ z-index: 100;
     justify-content: space-between;
     width: 100%;
     overflow: hidden;
-  }
-
-  #historias {
     position: relative;
   }
+
+  /* #historias {
+    position: relative;
+  } */
 
   .stories img {
     width:  50vw;
