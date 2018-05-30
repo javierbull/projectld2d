@@ -499,6 +499,10 @@ z-index: 100;
   background: #F5F5F5;
 }
 
+.bg_green {
+  background: green;
+}
+
 .cards-block {
   padding-top: 90px;
   display: flex;
