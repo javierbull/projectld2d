@@ -395,6 +395,8 @@ z-index: 100;
 
 }
 
+
+
 .text-box{
   margin-top: 95px;
   margin-bottom: 1rem;
@@ -404,17 +406,35 @@ z-index: 100;
 
 }
 
+/* animacion para scrollmagic historias */
+
 .translateLeft {
   opacity: 0;
-  transform: translate3d(-100%, 0, 0);
+  transform: translate(-100%, 0);
   transition: all 1s ease-out;
+
 }
 
 .translateLeftActive{
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+  transform: translate(0, 0);
 }
 
+.translateRight {
+  opacity: 0;
+  transform: translate(100%, 0);
+  transition:  all 1s ease-in-out;
+  position: relative;
+}
+
+
+.translateRightActive {
+  opacity: 1;
+  transform: translate(0, 0);
+
+}
+
+/**/
 .animation-box {
   animation: derecha 1.5s ease-in-out;
 }
@@ -496,51 +516,15 @@ z-index: 100;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
   }
 
   .stories img {
     width:  50vw;
     transition: all 0.5s ease-in-out;
-  }
-
-  .content-img{
-    width: 50vw;
-    position: relative;
-    overflow: hidden;
 
   }
 
-
-  .content-img:hover .content-1{
-    width: 200%;
-  }
-
-  .content-img:hover .content-2{
-    width: 200%;
-  }
-  .content-img:hover .content-3{
-    width: 200%;
-  }
-  .content-img:hover .content-4{
-    width: 200%;
-  }
-
-  .content-img:hover img{
-    transform: scale(1.5);
-    transition: all 0.3s ease-in-out;
-    opacity: 0.5;
-  }
-
-  .content-txt {
-    position: absolute;
-    top: 0;
-    width: 400px;
-    padding: 10px;
-    z-index: 100;
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-  }
 
   .titulo-3 {
     font-size: 30px;
@@ -551,79 +535,6 @@ z-index: 100;
     transition: all 0.3s ease-in-out;
   }
 
-  .content-txt p {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #f2f2f0;
-    text-shadow: 1px 1px black ;
-    opacity: 0;
-    transform: scale(0.2);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .content-img:hover h3{
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1);
-  }
-
-  .content-img:hover p{
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-
-
-  .content-1{
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    background: rgba(0, 100, 255, 0.7);
-    top: 0;
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    margin-left:-750px;
-    transition: all 0.35s ease-in-out;
-  }
-
-  .content-2{
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    background: rgba(0, 100, 255, 0.5);
-    top: 0;
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    margin-left:-800px;
-    transition: all 0.9s ease-in-out;
-  }
-
-  .content-3{
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    background: rgba(0, 100, 255, 0.5);
-    top: 0;
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(30deg);
-    margin-left:-800px;
-    margin-top: -500px;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0px 1px 20px -5px black;
-  }
-
-.content-4{
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    background: rgba(0, 100, 255, 0.5);
-    top: 0;
-    -webkit-transform: rotate(-30deg);
-    transform: rotate(30deg);
-    margin-left:-850px;
-    margin-top: -500px;
-    transition: all 0.8s ease-in-out;
-  }
 
 
   .stories h2 {
@@ -665,6 +576,8 @@ z-index: 100;
     margin-right: 10vw;
     padding: 30px;
   }
+
+
 
 /* fin stories ---------------------*/
 

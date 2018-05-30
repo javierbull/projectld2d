@@ -103,4 +103,31 @@ var Scene1Left = new ScrollMagic.Scene({
 
 // fin bloque about
 
+// bloque stories
+var Scene1Left = new ScrollMagic.Scene({
+	triggerElement: '#translateLeft1'
+})
+.setClassToggle('#translateLeft1', 'translateLeftActive')
+.addTo(controller);
+
+var Scene1Right = new ScrollMagic.Scene({
+	triggerElement: '#translateRight1'
+})
+.setClassToggle('#translateRight1', 'translateRightActive')
+.addTo(controller);
+
+var Scene2Left = new ScrollMagic.Scene({
+	triggerElement: '#translateLeft2'
+})
+.setClassToggle('#translateLeft2', 'translateLeftActive')
+.addTo(controller);
+
+var Scene2Right = new ScrollMagic.Scene({
+	triggerElement: '#translateRight2'
+})
+.setClassToggle('#translateRight2', 'translateRightActive')
+.addTo(controller);
+
+// fin bloque stories
+
 // fin animaciones scrollMagic
