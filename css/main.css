@@ -658,7 +658,7 @@ z-index: 100;
   .block-form {
     background: #fff;
     width: 500px;
-    height: 550px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -676,20 +676,22 @@ z-index: 100;
     box-sizing: border-box;
   }
 
-  .user{
-    background: tomato;
+  .user {
+    display: inline-block;
     display: block;
     width: 350px;
     padding: 16px 10px;
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
     box-sizing: border-box;
   }
 
+  #loginfacebook:hover {
+    background-color: #0060CA;
+  }
 
   #loginfacebook{
+      display: inline-block;
       color: #fff;
       width: 350px;
       padding: 16px 10px;
@@ -705,13 +707,12 @@ z-index: 100;
       transition: all 0.3s ease-in-out;
   }
 
-  #loginfacebook:hover {
-    background-color: #0060CA;
-  }
+
 
   #logoutfacebook{
+    display: inline-block;
     color: #fff;
-    width: 350px;
+    width: 100%;
     padding: 16px 10px;
     margin-top: 15px;
     margin-left: auto;
@@ -735,13 +736,12 @@ z-index: 100;
     color: black;
     font-size: 1.2rem;
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .btns_login {
 
-    display: flex;
-    justify-content: space-between;
     margin-left: 75px;
     margin-right: 75px;
   }
