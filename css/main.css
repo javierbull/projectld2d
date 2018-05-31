@@ -676,6 +676,19 @@ z-index: 100;
     box-sizing: border-box;
   }
 
+  .user{
+    background: tomato;
+    display: block;
+    width: 350px;
+    padding: 16px 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+
   #loginfacebook{
       color: #fff;
       width: 350px;
@@ -732,6 +745,7 @@ z-index: 100;
     margin-left: 75px;
     margin-right: 75px;
   }
+
 
   /* fin form_art ------------------*/
 
