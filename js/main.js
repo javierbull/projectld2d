@@ -129,5 +129,10 @@ var Scene2Right = new ScrollMagic.Scene({
 .addTo(controller);
 
 // fin bloque stories
+var Scene2 = new ScrollMagic.Scene({
+	triggerElement: '#art_block'
+})
+.setClassToggle('#art_block', 'fadeActive')
+.addTo(controller);
 
 // fin animaciones scrollMagic
