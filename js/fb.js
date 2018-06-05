@@ -4,7 +4,7 @@ window.fbAsyncInit = function() {
         cookie     : true,  // enable cookies to allow the server to access
             // the session
         xfbml      : true,  // parse social plugins on this page
-        version    : 'v3.8' //
+        version    : 'v3.0' //
     });
     FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
